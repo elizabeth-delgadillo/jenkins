@@ -61,7 +61,7 @@ public class LoginTest {
     @Test
     public void validateLoginUsingEmptyCredentials() {
         loginPage.login("","");
-        String expectedMessage = "Epic sadface: Username is required";
+        String expectedMessage = "Epic sadface: Username is requiredgit ";
         Assert.assertEquals(loginPage.getErrorMessage(), expectedMessage);
     }
 
@@ -69,4 +69,5 @@ public class LoginTest {
     public void tearDown() {
         driver.quit();
     }
+
 }
