@@ -61,7 +61,7 @@ public class LoginTest {
     @Test
     public void validateLoginUsingEmptyCredentials() {
         loginPage.login("","");
-        String expectedMessage = "Epic sadface: Username is required ";
+        String expectedMessage = "Epic sadface: Username is required";
         Assert.assertEquals(loginPage.getErrorMessage(), expectedMessage);
     }
 
